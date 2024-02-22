@@ -67,7 +67,7 @@ h1, h2 {
     background-color: rgba(255, 255, 255, 0.8); 
     width: 28%; /* Adjust the width as needed */
     position: absolute;
-    top: 38%;
+    top: 55%;
     left: 35px; /* Adjust the left positioning as needed */
     transform: translateY(-50%); /* Center vertically using transform */
   }
