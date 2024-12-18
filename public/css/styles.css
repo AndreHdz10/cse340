@@ -1,6 +1,192 @@
-/******* Change Box Model ***************/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+/*Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Nunito&display=swap');
+
+/*General CSS*/
+body{
+    margin: 0;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*Header*/
+
+#top-header {
+    margin: 30px 10px 30px 20px;
+    font-family: 'Lora', serif;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.siteName {
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+#tools {
+    justify-self: end;
+}
+
+/*Navigation Bar*/
+nav {
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+#vehicles ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    text-align: center;
+}
+
+/*Welcome */
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    margin-left: 20px;
+}
+
+#welcome img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+  }
+
+#car-details {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 28%; /* Adjust the width as needed */
+    position: absolute;
+    top: 55%;
+    left: 35px; /* Adjust the left positioning as needed */
+    transform: translateY(-50%); /* Center vertically using transform */
+  }
+
+#car-details h2 {
+    margin: 0;
+    color: rgb(18, 205, 205);
+    font-weight: bold;
+  }
+
+#car-details ul {
+    padding: 0;
+    color: rgb(18, 205, 205);
+    margin: 0;
+  }
+
+#car-details li {
+    margin-bottom: 5px;
+  }
+
+#car-details button {
+    background-color: rgb(18, 205, 205);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Reviews */
+
+#reviews {
+    margin: 70px 0;
+}
+#reviews ul{
+    list-style-type:initial;
+    margin-bottom: 15px;
+ }
+
+#reviews li{
+    margin-bottom: 15px;
+ }
+
+ /*Upgrades*/
+
+ #upgrades {
+    margin: 70px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+ }
+
+ #upgrades h2 {
+    text-align: start;
+ }
+ 
+ #upgrades img{
+    height: 80px;
+    width: 80px;
+    border: solid 1px black;
+    background-color: rgb(18, 205, 205);
+    padding: 10px 50px;
+    margin-bottom: 0;
+ }
+
+ #upgrades p{
+    margin-top: 0;
+    
+ }
+ 
+
+ /* Footer */
+
+footer {
+    background-color: rgb(18, 205, 205);
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+/*Media Queries for Responsive Design*/
+
+@media screen and (min-width: 768px){
+
+    html {
+        background-image: url(/images/site/small_check.jpg);
+    }
+    body{
+        background-color: white;
+    }
+
+    body {
+        border: solid 7px rgb(18, 205, 205);
+        margin: 80px 120px;
+    }
+
+    #car-details {
+        background-color: rgba(255, 255, 255, 0.8); 
+        width: 15%; /* Adjust the width as needed */
+        height: 30%;
+        position: absolute;
+        top: 60%;
+        left: 25%; /* Adjust the left positioning as needed */
+        transform: translateY(-50%); /* Center vertically using transform */
+      }
+
+      #details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 550px;
+      }
+
+      #reviews {
+        grid-column: 2 / 3; /* Move #reviews to columns 2/3 */
+        grid-row: 1 / 2; /* Align #reviews to the first row */
+    }
+    
+    #upgrades {
+        grid-column: 1 / 2; /* Move #upgrades to columns 1/2 */
+        grid-row: 1 / 2; /* Align #upgrades to the first row */
+    }
+
 }
